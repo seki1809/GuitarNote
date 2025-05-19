@@ -1,0 +1,20 @@
+body      { font-family: system-ui, sans-serif; text-align: center; margin: 4rem; }
+h1        { margin-bottom: 2rem; }
+button    { font-size: 1rem; padding: .6rem 1.2rem; margin: .5rem; }
+#target   { font-size: 1.4rem; font-weight: 600; }
+#status   { margin-top: 2rem; font-size: 1.2rem; }
+.good     { color: green;  }
+.bad      { color: red;    }
+.chord { font-size: 1.2rem; font-style: italic; margin: .5rem 0; }
+
+/* === string selector ====================================== */
+.toggle-row { display: flex; justify-content: center; margin: 1rem 0; }
+.toggle      { position: relative; margin: 0 .35rem; cursor: pointer; }
+.toggle input{ display: none; }            /* hide real checkbox */
+.toggle span { display: inline-block; width: 2rem; height: 2rem;
+               line-height: 2rem; text-align: center;
+               border: 2px solid #666; border-radius: 50%;
+               user-select: none; transition: .2s; }
+.toggle input:checked + span {
+  background: #4caf50; color: #fff; border-color: #4caf50;
+}
